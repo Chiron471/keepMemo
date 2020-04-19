@@ -1,0 +1,3 @@
+//change file system time
+$(Get-Item abc.txt).lastaccesstime=$(Get-Date "11/04/2019 20:42:23")
+$(Get-Item abc.txt).lastwritetime=$(Get-Date "11/04/2019 20:42:23")
