@@ -1,3 +1,7 @@
 //change file system time
+$(Get-Item abc.txt).creationtime=$(Get-Date "11/04/2019 20:42:23")
 $(Get-Item abc.txt).lastaccesstime=$(Get-Date "11/04/2019 20:42:23")
 $(Get-Item abc.txt).lastwritetime=$(Get-Date "11/04/2019 20:42:23")
+
+
+Get-ChildItem -Recurse tt*.txt | ForEach-Object {$_.LastWriteTime = '04/17/2020 18:00:01'}
